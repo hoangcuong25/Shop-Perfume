@@ -5,7 +5,7 @@ import item4 from './item4.png'
 
 let recommend_item = [
     {
-        id : 1,
+        id: 1,
         name: `J'adore L’Or Eau De Parfum 50ml`,
         brands: `DIOR`,
         image: item1,
@@ -14,8 +14,8 @@ let recommend_item = [
         new_price: 120,
     },
     {
-        id : 2,
-        name: `CHANEL Coco Mademoiselle Eau De Parfum 35ml`,
+        id: 2,
+        name: `CHANEL Coco Parfum 35ml`,
         brands: `CHANEL`,
         image: item2,
         category: `women`,
@@ -23,7 +23,7 @@ let recommend_item = [
         new_price: 60,
     },
     {
-        id : 3,
+        id: 3,
         name: `Sauvage Eau De Toilette 60ml`,
         brands: `DIOR`,
         image: item3,
@@ -32,7 +32,7 @@ let recommend_item = [
         new_price: 48,
     },
     {
-        id : 4,
+        id: 4,
         name: `ALIEN Eau De Parfum 60ml`,
         brands: `Mugler`,
         image: item4,

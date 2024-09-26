@@ -2,7 +2,7 @@ import banner_offer from '../../assets/banner_offer.png';
 
 const Offer = () => {
     return (
-        <div className='flex justify-evenly items-center'>
+        <div className='flex justify-evenly items-center mt-7'>
             <div>
                 <h1 className="text-[40px]">Exclusive </h1>
                 <h1 className="text-[40px]">Offers For You</h1>
@@ -10,7 +10,7 @@ const Offer = () => {
             </div>
 
             <div>
-                <img src={banner_offer} alt="" className='h-[480px] w-[600px]' />
+                <img src={banner_offer} alt="" className='h-[450px] w-[650px]' />
             </div>
         </div>
     )
