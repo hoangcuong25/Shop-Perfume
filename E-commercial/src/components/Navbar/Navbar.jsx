@@ -1,10 +1,11 @@
-import { useState } from "react"
+import { useContext} from "react"
 import { Link } from "react-router-dom"
+import { ShopContext } from "../../Context/Context"
 
 
 const Navbar = () => {
 
-    const [menu, setMenu] = useState('home')
+    const {menu, setMenu} = useContext(ShopContext)
 
     return (
         <div>

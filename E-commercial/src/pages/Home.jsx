@@ -1,5 +1,7 @@
+import About from "../components/About/About"
 import Hero from "../components/Hero/Hero"
 import LastestBlog from "../components/LastestBlog/LastestBlog"
+import NewsLetter from "../components/NewLetter/NewLetter"
 import Offer from "../components/Offer/Offer"
 import Recommend from "../components/Recommend/Recommend"
 
@@ -12,6 +14,8 @@ function Home() {
             <Offer />
             <Recommend />
             <LastestBlog />
+            <NewsLetter />
+            <About />
         </div>
     )
 }

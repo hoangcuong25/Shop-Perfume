@@ -4,7 +4,7 @@ import Blog from '../Blog/Blog'
 const LastestBlog = () => {
     return (
         <div className='mt-12 flex flex-col items-center'>
-            <h1 className='text-[40px] mb-8'>The Latest From The Fragrance Direct Blog</h1>
+            <h1 className='text-[40px] mb-8 font-semibold'>The Latest From The Fragrance Direct Blog</h1>
             <div className='grid grid-cols-4'>
                 {lastest_blogs.map((blog, index) => {
                     return <Blog key={index} image={blog.image} title={blog.title} intro={blog.intro} />
