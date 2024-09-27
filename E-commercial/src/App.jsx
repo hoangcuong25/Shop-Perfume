@@ -10,6 +10,7 @@ import banner_men1 from '../src/assets/banner_men1.png'
 import banner_women from '../src/assets/banner_women.jpg'
 import banner_women1 from '../src/assets/banner_women1.png'
 import NewTrending from "./pages/NewTrending"
+import SignUp from "./pages/SignUp"
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/men' element={<Category category='men' banner={banner_men} banner1={banner_men1} />} />
           <Route path='/women' element={<Category category='women' banner={banner_women} banner1={banner_women1} />} />
           <Route path='/log-in' element={<LogInSite />} />
+          <Route path='/sign-up' element={<SignUp />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -4,7 +4,7 @@ import Item from '../components/Item/Item'
 const Category = (props) => {
     return (
         <div className='flex flex-col'>
-            <div className="bg-[#19c5c0] w-[100%] h-[53px] flex justify-center items-center mb-5 uppercase">
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-[100%] h-[53px] flex justify-center items-center mb-5 uppercase">
                 <h1 className="text-white flex text-[30px] pb-1">{props.category}</h1>
             </div>
             <img src={props.banner} alt="" />

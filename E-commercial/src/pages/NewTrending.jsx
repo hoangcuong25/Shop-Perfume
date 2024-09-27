@@ -5,12 +5,11 @@ import Item from '../components/Item/Item'
 const NewTrending = () => {
     return (
         <div>
-            <div className="bg-[#19c5c0] w-[100%] h-[53px] flex justify-center items-center">
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-[100%] h-[53px] flex justify-center items-center">
                 <h1 className="text-white flex text-[30px] pb-1">Discovery New Fragrances</h1>
             </div>
-            <div className='mt-5 flex justify-center relative'>
+            <div className='mt-5 flex justify-center relative '>
                 <img src={banner} alt="" />
-                <p className='absolute bg-white h-[80px] w-[150px] text-center pt-5 font-semibold text-[23px] left-0 bottom-0 '>NEW</p>
             </div>
             <div className='grid grid-cols-4 mt-7 mx-3'>
                 {new_trending.map((item, index) => {
