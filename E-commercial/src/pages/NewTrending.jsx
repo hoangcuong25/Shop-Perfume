@@ -16,7 +16,6 @@ const NewTrending = () => {
                     return <Item key={index} image={item.image} brands={item.brands} name={item.name} new_price={item.new_price} old_price={item.old_price} />
                 })}
             </div>
-
         </div>
     )
 }

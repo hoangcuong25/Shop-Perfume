@@ -33,12 +33,42 @@ const Header = () => {
 
                 {/* right side */}
                 <div className="flex items-center gap-10 px-10 relative">
-                    <IoLocationOutline className='text-[30px] cursor-pointer hover:text-primary' />
-                    <CiDeliveryTruck className='text-[37px] cursor-pointer hover:text-primary' />
-                    <MdOutlineFavoriteBorder className='text-[30px] cursor-pointer hover:text-primary' />
-                    <Link to='/log-in'><VscAccount className='text-[28px] cursor-pointer hover:text-primary' /></Link>
-                    <PiShoppingCartSimple className='text-[37px] cursor-pointer hover:text-primary' />
-                    <p className='bg-red-600 py-0 px-[5px] rounded-full absolute right-9 top-0 text-[13px]'>0</p>
+                    <div className='relative group'>
+                        <IoLocationOutline className='text-[30px] cursor-pointer hover:text-primary' />
+                        <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
+                            Location
+                        </span>
+                    </div>
+
+                    <div className='relative group'>
+                        <CiDeliveryTruck className='text-[37px] cursor-pointer hover:text-primary' />
+                        <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
+                            Delivery
+                        </span>
+                    </div>
+
+                    <div className='relative group'>
+                        <MdOutlineFavoriteBorder className='text-[30px] cursor-pointer hover:text-primary' />
+                        <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
+                            Whistlist
+                        </span>
+                    </div>
+
+                    <div className='relative group'>
+                        <Link to='/log-in'><VscAccount className='text-[28px] cursor-pointer hover:text-primary' /></Link>
+                        <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
+                            Login
+                        </span>
+                    </div>
+
+                    <div className='relative group'>
+                        <PiShoppingCartSimple className='text-[37px] cursor-pointer hover:text-primary' />
+                        <p className='bg-red-600 py-0 px-[5px] rounded-full absolute right-[-3px] top-0 text-[13px]'>0</p>
+                        <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
+                            Cart
+                        </span>
+                    </div>
+
                 </div>
             </div>
             <hr className='mb-2' />

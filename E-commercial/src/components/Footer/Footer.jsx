@@ -3,8 +3,12 @@ import pin_logo from '../../assets/pintester_icon.png'
 import whatsapp from '../../assets/whatsapp_icon.png'
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { ShopContext } from "../../Context/Context"
 
 const Footer = () => {
+    const {setMenu} = useContext(ShopContext)
+    
     return (
         <div className="flex flex-col mt-20 mb-12 items-center gap-10 ">
             <Link to='/' onClick={() => setMenu('home')}><img src={logo} alt="" className='w-[217px] h-[37px]' />{ }</Link>

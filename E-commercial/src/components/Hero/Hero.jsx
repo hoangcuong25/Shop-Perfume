@@ -10,8 +10,13 @@ import for_him from '../../assets/for_him.png'
 import new_in from '../../assets/new_in.png'
 import sale from '../../assets/sale.png'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { ShopContext } from "../../Context/Context"
 
 const Hero = () => {
+
+    const { setMenu } = useContext(ShopContext)
+
     return (
         <div className='flex flex-col items-center'>
             <img src={main_banner} alt="" />
@@ -25,20 +30,20 @@ const Hero = () => {
                 <img src={versace_logo} alt="" className='w-[100px] h-[30px] hover:scale-110 transition-all duration-700' />
             </div>
             <div className='flex gap-12 my-7'>
-                <Link to='/women'><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                <Link to='/women' onClick={() => setMenu('women')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
                     <img src={for_her} alt="" className='h-[200px] w-[200px]' />
                     <h1 className='pt-1'>For Her</h1>
                 </div>
                 </Link>
 
 
-                <Link to='/men'><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                <Link to='/men' onClick={() => setMenu('men')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
                     <img src={for_him} alt="" className='h-[200px] w-[200px]' />
                     <p className='pt-1'>For Him</p>
                 </div>
                 </Link>
 
-                <Link to='/women'><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                <Link to='/new-trending' onClick={() => setMenu('new')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
                     <img src={new_in} alt="" className='h-[200px] w-[200px]' />
                     <h1 className='pt-1'>New In</h1>
                 </div>
