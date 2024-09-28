@@ -7,11 +7,13 @@ import { useContext } from 'react'
 import { ShopContext } from "../../Context/Context"
 
 const Footer = () => {
-    const {setMenu} = useContext(ShopContext)
-    
+    const { setMenu } = useContext(ShopContext)
+
     return (
         <div className="flex flex-col mt-20 mb-12 items-center gap-10 ">
-            <Link to='/' onClick={() => setMenu('home')}><img src={logo} alt="" className='w-[217px] h-[37px]' />{ }</Link>
+            <div onClick={() => window.scrollTo(0, 0)}>
+                <Link to='/' onClick={() => setMenu('home')}><img src={logo} alt="" className='w-[217px] h-[37px]' /></Link>
+            </div>
             <ul className="flex gap-28">
                 <li>Company</li>
                 <li>Product</li>
