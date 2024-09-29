@@ -24,7 +24,7 @@ const CartItem = () => {
                         <div>
                             <div className="grid grid-cols-6 text-center">
                                 <div className="flex justify-center">
-                                    <img src={item.image} alt="" className="size-[100px]" />
+                                    <img src={item.image} alt="" className="size-[73px]" />
                                 </div>
                                 <p className="text-left">{item.name}</p>
                                 <p>{item.new_price}</p>

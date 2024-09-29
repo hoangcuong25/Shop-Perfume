@@ -12,57 +12,108 @@ import sale from '../../assets/sale.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { ShopContext } from "../../Context/Context"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import HeroBanner from '../../assets/HeroBanner'
 
 const Hero = () => {
 
     const { setMenu } = useContext(ShopContext)
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    };
+
+    console.log(HeroBanner)
     return (
-        <div className='flex flex-col items-center'>
-            <img src={main_banner} alt="" />
-            <h1 className='text-[40px] my-7 font-semibold'>OUR FRAGRANCE BRANDS</h1>
-            <div className='flex gap-12 cursor-pointer'>
-                <img src={dolce_gabbana_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
-                <img src={carolina_herrera_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
-                <img src={gucci_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
-                <img src={marc_jacobs_logo} alt="" className='w-[110px] h-[20px] hover:scale-110 transition-all duration-700' />
-                <img src={tom_ford_logo} alt="" className='w-[130px] h-[25px] hover:scale-110 transition-all duration-700' />
-                <img src={versace_logo} alt="" className='w-[100px] h-[30px] hover:scale-110 transition-all duration-700' />
+        <>
+            <div className='px-10'>
+                <Slider {...settings}>
+                    {HeroBanner.map((banner, index) => {
+                        return (
+                            <div key={index} >
+                                <img src={banner} alt="" />
+                            </div>
+                        )
+                    })}
+                </Slider>
             </div>
-            <div className='flex gap-12 my-7'>
-                <div onClick={() => window.scrollTo(0, 0)}>
-                    <Link to='/women' onClick={() => setMenu('women')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
-                        <img src={for_her} alt="" className='h-[200px] w-[200px]' />
-                        <h1 className='pt-1'>For Her</h1>
+            <div className='flex flex-col items-center'>
+                <h1 className='text-[40px] my-7 font-semibold'>OUR FRAGRANCE BRANDS</h1>
+                <div className='flex gap-12 cursor-pointer'>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/Dolce&Gabbana' onClick={() => setMenu('brand')}>
+                            <img src={dolce_gabbana_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
+                        </Link>
                     </div>
-                    </Link>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/CarolinaHerrera' onClick={() => setMenu('brand')}>
+                            <img src={carolina_herrera_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
+                        </Link>
+                    </div>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/Gucci' onClick={() => setMenu('brand')}>
+                            <img src={gucci_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
+                        </Link>
+                    </div>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/MarcJacobs' onClick={() => setMenu('brand')}>
+                            <img src={marc_jacobs_logo} alt="" className='w-[110px] h-[20px] hover:scale-110 transition-all duration-700' />
+                        </Link>
+                    </div>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/TOMFORD' onClick={() => setMenu('brand')}>
+                            <img src={tom_ford_logo} alt="" className='w-[130px] h-[25px] hover:scale-110 transition-all duration-700' />
+                        </Link>
+                    </div>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/Versace' onClick={() => setMenu('brand')}>
+                            <img src={versace_logo} alt="" className='w-[100px] h-[30px] hover:scale-110 transition-all duration-700' />
+                        </Link>
+                    </div>
                 </div>
+                <div className='flex gap-12 my-7'>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/women' onClick={() => setMenu('women')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                            <img src={for_her} alt="" className='h-[200px] w-[200px]' />
+                            <h1 className='pt-1'>For Her</h1>
+                        </div>
+                        </Link>
+                    </div>
 
-                <div onClick={() => window.scrollTo(0, 0)}>
-                    <Link to='/men' onClick={() => setMenu('men')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
-                        <img src={for_him} alt="" className='h-[200px] w-[200px]' />
-                        <p className='pt-1'>For Him</p>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/men' onClick={() => setMenu('men')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                            <img src={for_him} alt="" className='h-[200px] w-[200px]' />
+                            <p className='pt-1'>For Him</p>
+                        </div>
+                        </Link>
                     </div>
-                    </Link>
-                </div>
 
-                <div onClick={() => window.scrollTo(0, 0)}>
-                    <Link to='/new-trending' onClick={() => setMenu('new')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
-                        <img src={new_in} alt="" className='h-[200px] w-[200px]' />
-                        <h1 className='pt-1'>New In</h1>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/new-trending' onClick={() => setMenu('new')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                            <img src={new_in} alt="" className='h-[200px] w-[200px]' />
+                            <h1 className='pt-1'>New In</h1>
+                        </div>
+                        </Link>
                     </div>
-                    </Link>
-                </div>
 
-                <div onClick={() => window.scrollTo(0, 0)}>
-                    <Link to='/women'><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
-                        <img src={sale} alt="" className='h-[200px] w-[200px]' />
-                        <h1 className='pt-1'>Sale</h1>
+                    <div onClick={() => window.scrollTo(0, 0)}>
+                        <Link to='/discovery' onClick={() => setMenu('discovery')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                            <img src={sale} alt="" className='h-[200px] w-[200px]' />
+                            <h1 className='pt-1'>Sale</h1>
+                        </div>
+                        </Link>
                     </div>
-                    </Link>
                 </div>
-            </div>
-        </div >
+            </div >
+        </>
     )
 }
 

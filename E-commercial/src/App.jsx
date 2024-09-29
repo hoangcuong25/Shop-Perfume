@@ -13,6 +13,9 @@ import NewTrending from "./pages/NewTrending"
 import SignUp from "./pages/SignUp"
 import Product from "./pages/Product"
 import Cart from "./pages/Cart"
+import ParticularBrand from "./pages/ParticularBrand"
+import Brands from "./pages/Brands"
+import Discovery from "./pages/Discovery"
 
 
 
@@ -31,6 +34,16 @@ function App() {
           <Route path='/sign-up' element={<SignUp />} />
           <Route path="/product/:idProduct" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/discovery" element={<Discovery />} />
+
+          <Route path='/Dolce&Gabbana' element={<ParticularBrand brands="Dolce & Gabbana" />} />
+          <Route path='/CarolinaHerrera' element={<ParticularBrand brands="Carolina Herrera" />} />
+          <Route path='/Gucci' element={<ParticularBrand brands="Gucci" />} />
+          <Route path='/MarcJacobs' element={<ParticularBrand brands="Marc Jacobs" />} />
+          <Route path='/TOMFORD' element={<ParticularBrand brands="TOM FORD" />} />
+          <Route path='/Versace' element={<ParticularBrand brands="Versace" />} />
+          <Route path='/brands' element={<Brands />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

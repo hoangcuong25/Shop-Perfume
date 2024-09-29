@@ -15,11 +15,38 @@ const Navbar = () => {
                 <li onClick={() => setMenu('new')}><Link to='/new-trending'>NEW & TRENDING</Link>{menu === 'new' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('men')}><Link to='/men'>MEN'S</Link>{menu === 'men' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('women')}><Link to='/women'>WOMEN'S</Link>{menu === 'women' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('brand')} ><Link className="flex items-center gap-1">BRANDS<IoIosArrowDown /></Link>{menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <div className="relative">
+                    <li onClick={() => setMenu('brand')} className="peer">
+                        <Link to='/brands' className="flex items-center gap-1">BRANDS<IoIosArrowDown /></Link>
+                        {menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}
+                    </li>
+                    <div className="hidden peer-hover:flex hover:flex justify-evenly
+                        w-[200px] h-[290px] flex-col bg-white drop-shadow-lg absolute top-6 z-10 border border-gray-400">
+                        <Link to='/CarolinaHerrera'>
+                            <div className="px-5 py-3 w-[200px] hover:bg-gray-200 " >Carolina Herrera</div>
+                        </Link >
+                        <Link to='/TOMFORD'>
+                            <div className="px-5 py-3 hover:bg-gray-200 " >TOM FORD</div>
+                        </Link>
+                        <Link to='/MarcJacobs'>
+                            <div className="px-5 py-3 hover:bg-gray-200" >Marc Jacobs</div>
+                        </Link>
+                        <Link to='/Versace'>
+                            <div className="px-5 py-3 hover:bg-gray-200" >Versace</div>
+                        </Link>
+                        <Link to='/Gucci'>
+                            <div className="px-5 py-3 hover:bg-gray-200" >Gucci</div>
+                        </Link>
+                        <Link to='/Dolce&Gabbana'>
+                            <div className="px-5 py-3 hover:bg-gray-200" >Dolce & Gabbana</div>
+                        </Link>
+                    </div>
+
+                </div>
                 <li onClick={() => setMenu('offer')}><Link>OFFER</Link>{menu === 'offer' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('gifting')}><Link>GIFTING</Link>{menu === 'gifting' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('face')}><Link>FACE AND BODY</Link>{menu === 'face' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('discovery')}><Link>DISCOVERY</Link>{menu === 'discovery' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('discovery')}><Link to='/discovery'>DISCOVERY</Link>{menu === 'discovery' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('blog')}><Link>BLOG</Link>{menu === 'blog' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
             </ul>
             <hr className='my-3' />
