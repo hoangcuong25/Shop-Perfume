@@ -8,7 +8,7 @@ const NewsLetter = () => {
             relative hover:border-primary">
                 <input type="email"
                     placeholder="Your Email Address"
-                    className="absolute top-3 left-4 border-none outline-none focus:border-primary" />
+                    className="w-72 absolute top-3 left-4 border-none outline-none focus:border-primary" />
                 <button className="absolute top-0 right-0 bg-black text-white w-[113px] h-[50px] rounded-full">Subcribe</button>
             </div>
 

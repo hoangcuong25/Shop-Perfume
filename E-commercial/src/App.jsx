@@ -11,6 +11,8 @@ import banner_women from '../src/assets/banner_women.jpg'
 import banner_women1 from '../src/assets/banner_women1.png'
 import NewTrending from "./pages/NewTrending"
 import SignUp from "./pages/SignUp"
+import Product from "./pages/Product"
+import Cart from "./pages/Cart"
 
 
 
@@ -27,6 +29,8 @@ function App() {
           <Route path='/women' element={<Category category='women' banner={banner_women} banner1={banner_women1} />} />
           <Route path='/log-in' element={<LogInSite />} />
           <Route path='/sign-up' element={<SignUp />} />
+          <Route path="/product/:idProduct" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

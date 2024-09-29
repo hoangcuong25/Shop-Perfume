@@ -1,5 +1,7 @@
 import all_item from '../assets/all_item'
 import Item from '../components/Item/Item'
+import Recommend from '../components/Recommend/Recommend'
+
 
 const Category = (props) => {
     return (
@@ -11,13 +13,14 @@ const Category = (props) => {
             <div className='grid grid-cols-4 my-7 mx-3'>
                 {all_item.map((item, index) => {
                     if (props.category === item.category) {
-                        return <Item key={index} image={item.image} brands={item.brands}
+                        return <Item key={index} id={item.id} image={item.image} brands={item.brands}
                             name={item.name} new_price={item.new_price} old_price={item.old_price} />
                     }
                     return null
                 })}
             </div>
             <img src={props.banner1} alt="" />
+            <Recommend />
         </div>
     )
 }

@@ -21,7 +21,7 @@ const Hero = () => {
         <div className='flex flex-col items-center'>
             <img src={main_banner} alt="" />
             <h1 className='text-[40px] my-7 font-semibold'>OUR FRAGRANCE BRANDS</h1>
-            <div className='flex gap-12'>
+            <div className='flex gap-12 cursor-pointer'>
                 <img src={dolce_gabbana_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
                 <img src={carolina_herrera_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
                 <img src={gucci_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />

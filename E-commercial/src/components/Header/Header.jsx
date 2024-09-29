@@ -11,7 +11,7 @@ import { ShopContext } from '../../Context/Context';
 
 const Header = () => {
 
-    const { setMenu } = useContext(ShopContext)
+    const { setMenu, getTotalCartItems } = useContext(ShopContext)
 
     return (
         <>
@@ -61,13 +61,14 @@ const Header = () => {
                         </span>
                     </div>
 
-                    <div className='relative group'>
+                    <Link to='/cart' onClick={() => window.scrollTo(0, 0)}><div className='relative group'>
                         <PiShoppingCartSimple className='text-[37px] cursor-pointer hover:text-primary' />
-                        <p className='bg-red-600 py-0 px-[5px] rounded-full absolute right-[-3px] top-0 text-[13px]'>0</p>
+                        <p className='bg-red-600 py-0 px-[5px] rounded-full absolute right-[-3px] top-0 text-[13px]'>{getTotalCartItems()}</p>
                         <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
                             Cart
                         </span>
                     </div>
+                    </Link>
 
                 </div>
             </div>
