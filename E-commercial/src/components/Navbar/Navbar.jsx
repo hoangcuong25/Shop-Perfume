@@ -43,8 +43,8 @@ const Navbar = () => {
                     </div>
 
                 </div>
-                <li onClick={() => setMenu('offer')}><Link>OFFER</Link>{menu === 'offer' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('gifting')}><Link>GIFTING</Link>{menu === 'gifting' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+
+                <li onClick={() => setMenu('gifting')}><Link to='gifting'>GIFTING</Link>{menu === 'gifting' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('face')}><Link>FACE AND BODY</Link>{menu === 'face' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('discovery')}><Link to='/discovery'>DISCOVERY</Link>{menu === 'discovery' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('blog')}><Link>BLOG</Link>{menu === 'blog' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>

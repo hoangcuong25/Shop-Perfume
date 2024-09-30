@@ -16,6 +16,7 @@ import Cart from "./pages/Cart"
 import ParticularBrand from "./pages/ParticularBrand"
 import Brands from "./pages/Brands"
 import Discovery from "./pages/Discovery"
+import Gifting from "./pages/Gifting"
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/product/:idProduct" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/discovery" element={<Discovery />} />
+          <Route path='/gifting' element={<Gifting />} />
 
           <Route path='/Dolce&Gabbana' element={<ParticularBrand brands="Dolce & Gabbana" />} />
           <Route path='/CarolinaHerrera' element={<ParticularBrand brands="Carolina Herrera" />} />
