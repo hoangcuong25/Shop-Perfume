@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
 
                 <li onClick={() => setMenu('gifting')}><Link to='gifting'>GIFTING</Link>{menu === 'gifting' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('face')}><Link>FACE AND BODY</Link>{menu === 'face' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('bathandbody')}><Link to='bathandbody'>BATH AND BODY</Link>{menu === 'bathandbody' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('discovery')}><Link to='/discovery'>DISCOVERY</Link>{menu === 'discovery' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('blog')}><Link>BLOG</Link>{menu === 'blog' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
             </ul>

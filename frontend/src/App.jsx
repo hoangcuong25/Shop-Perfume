@@ -17,6 +17,7 @@ import ParticularBrand from "./pages/ParticularBrand"
 import Brands from "./pages/Brands"
 import Discovery from "./pages/Discovery"
 import Gifting from "./pages/Gifting"
+import FaceBody from "./pages/BathBody"
 
 
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/discovery" element={<Discovery />} />
           <Route path='/gifting' element={<Gifting />} />
+          <Route path='/bathandbody' element={<FaceBody />} />
 
           <Route path='/Dolce&Gabbana' element={<ParticularBrand brands="Dolce & Gabbana" />} />
           <Route path='/CarolinaHerrera' element={<ParticularBrand brands="Carolina Herrera" />} />
