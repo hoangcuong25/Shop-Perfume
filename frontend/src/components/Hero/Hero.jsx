@@ -1,4 +1,3 @@
-import main_banner from '../../assets/main-banner.png'
 import dolce_gabbana_logo from '../../assets/dolce_gabbana_logo.png'
 import carolina_herrera_logo from '../../assets/Carolina_Herrera_Brand_Logo.png'
 import gucci_logo from '../../assets/Gucci_Brand_Logo.png'
@@ -27,24 +26,25 @@ const Hero = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
     };
 
     console.log(HeroBanner)
     return (
         <>
-            <div className='px-10'>
+            <div className=''>
                 <Slider {...settings}>
                     {HeroBanner.map((banner, index) => {
                         return (
-                            <div key={index} >
+                            <div key={index} className='!important flex justify-center'>
                                 <img src={banner} alt="" />
                             </div>
                         )
                     })}
                 </Slider>
             </div>
+
             <div className='flex flex-col items-center'>
                 <h1 className='text-[40px] my-7 font-semibold'>OUR FRAGRANCE BRANDS</h1>
                 <div className='flex gap-12 cursor-pointer'>

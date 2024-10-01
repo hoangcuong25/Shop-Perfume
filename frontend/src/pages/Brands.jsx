@@ -9,7 +9,11 @@ const Brands = () => {
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-[100%] h-[53px] flex justify-center items-center">
                 <h1 className="text-white flex text-[30px] pb-1">All Perfume Brands</h1>
             </div>
-            <img src={banner1} alt="" className="my-3 px-10"/>
+
+            <div className='flex justify-center'>
+                <img src={banner1} alt="" className="my-3 " />
+            </div>
+
             <h1 className="text-[40px] font-bold text-center">Carolina Herrera</h1>
             <div className='grid grid-cols-4 my-7 mx-3 '>
                 {all_item.map((item, index) => {

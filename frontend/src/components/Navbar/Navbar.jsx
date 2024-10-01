@@ -20,25 +20,25 @@ const Navbar = () => {
                         <Link to='/brands' className="flex items-center gap-1">BRANDS<IoIosArrowDown /></Link>
                         {menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}
                     </li>
-                    <div className="hidden peer-hover:flex hover:flex justify-evenly
-                        w-[200px] h-[290px] flex-col bg-white drop-shadow-lg absolute top-6 z-10 border border-gray-400">
+                    <div className="hidden peer-hover:flex hover:flex justify-evenly w-[200px] h-[290px] flex-col 
+                    bg-white drop-shadow-lg absolute top-6 z-10 border border-gray-400 dark:bg-[#010910]">
                         <Link to='/CarolinaHerrera'>
-                            <div className="px-5 py-3 w-[200px] hover:bg-gray-200 " >Carolina Herrera</div>
+                            <div className="px-5 py-3 w-[200px] hover:bg-gray-200 dark:hover:bg-gray-800" >Carolina Herrera</div>
                         </Link >
                         <Link to='/TOMFORD'>
-                            <div className="px-5 py-3 hover:bg-gray-200 " >TOM FORD</div>
+                            <div className="px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" >TOM FORD</div>
                         </Link>
                         <Link to='/MarcJacobs'>
-                            <div className="px-5 py-3 hover:bg-gray-200" >Marc Jacobs</div>
+                            <div className="px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" >Marc Jacobs</div>
                         </Link>
                         <Link to='/Versace'>
-                            <div className="px-5 py-3 hover:bg-gray-200" >Versace</div>
+                            <div className="px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" >Versace</div>
                         </Link>
                         <Link to='/Gucci'>
-                            <div className="px-5 py-3 hover:bg-gray-200" >Gucci</div>
+                            <div className="px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" >Gucci</div>
                         </Link>
                         <Link to='/Dolce&Gabbana'>
-                            <div className="px-5 py-3 hover:bg-gray-200" >Dolce & Gabbana</div>
+                            <div className="px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" >Dolce & Gabbana</div>
                         </Link>
                     </div>
 
