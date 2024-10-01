@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import { ShopContext } from "../../Context/Context"
 import { IoIosArrowDown } from "react-icons/io";
 
-
 const Navbar = () => {
 
     const { menu, setMenu } = useContext(ShopContext)

@@ -5,7 +5,7 @@ import facebody4 from '../assets/facebody4.jpg'
 
 let FaceBodyItem = [
     {
-        id: 1,
+        id: 33,
         name: `BAD BOY Deodorant 100ml`,
         brands: `Carolina Herrera`,
         image: facebody1,
@@ -15,7 +15,7 @@ let FaceBodyItem = [
         best_seller: "y"
     },
     {
-        id: 2,
+        id: 34,
         name: `GOOD GIRL Body Cream 200ml`,
         brands: `Carolina Herrera`,
         image: facebody2,
@@ -25,7 +25,7 @@ let FaceBodyItem = [
         best_seller: "y"
     },
     {
-        id: 3,
+        id: 35,
         name: `GUCCI GUILTY FOR HIM Deodorant 150ml`,
         brands: `Gucci`,
         image: facebody3,
@@ -35,7 +35,7 @@ let FaceBodyItem = [
         best_seller: "y"
     },
     {
-        id: 4,
+        id: 36,
         name: `GUCCI GUILTY FOR HIM Shower Gel 150ml`,
         brands: `Gucci`,
         image: facebody4,

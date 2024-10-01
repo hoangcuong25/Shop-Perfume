@@ -9,7 +9,7 @@ import gifting8 from '../assets/gifting8.jpg'
 
 let Gift = [
     {
-        id: 1,
+        id: 25,
         name: `BAD BOY Eau De Toilette 100ml Gift Set`,
         brands: `Carolina Herrera`,
         image: gifting1,
@@ -19,7 +19,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 2,
+        id: 26,
         name: `OMBRE LEATHER Eau De Parfum 100ml Gift Set`,
         brands: `TOM FORD`,
         image: gifting2,
@@ -29,7 +29,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 3,
+        id: 27,
         name: `NOIR FOR MEN Extreme Eau De Parfum 100ml Gift Set`,
         brands: `TOM FORD`,
         image: gifting3,
@@ -39,7 +39,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 4,
+        id: 28,
         name: `EROS Eau De Parfum 100ml Gift Set`,
         brands: `Versace`,
         image: gifting4,
@@ -49,7 +49,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 5,
+        id: 29,
         name: `DEVOTION Eau De Parfum Mini Gift Set`,
         brands: `Dolce & Gabbana`,
         image: gifting5,
@@ -59,7 +59,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 6,
+        id: 30,
         name: `VERSACE MAN 4x5ml Mini Gift Set`,
         brands: `Versace`,
         image: gifting6,
@@ -69,7 +69,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 7,
+        id: 31,
         name: `GOOD GIRL Eau De Parfum 50ml Gift Set`,
         brands: `Carolina Herrera`,
         image: gifting7,
@@ -79,7 +79,7 @@ let Gift = [
         best_seller: "y"
     },
     {
-        id: 8,
+        id: 32,
         name: `VERSACE WOMAN Eau De Toilette 4x5ml Gift Set`,
         brands: `Versace`,
         image: gifting8,
