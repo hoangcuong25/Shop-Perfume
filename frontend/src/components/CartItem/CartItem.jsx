@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { useContext } from "react"
 import { ShopContext } from "../../Context/Context"
 import { TiDeleteOutline } from "react-icons/ti";
@@ -21,7 +22,7 @@ const CartItem = () => {
             {all_item.map((item, index) => {
                 if (cartItems[item.id] > 0) {
                     return (
-                        <div>
+                        <div key={index}>
                             <div className="grid grid-cols-6 text-center">
                                 <div className="flex justify-center">
                                     <img src={item.image} alt="" className="size-[73px]" />
@@ -65,9 +66,9 @@ const CartItem = () => {
                 <div className="mx-36">
                     <p>If you have a promo code, Enter it here</p>
                     <div className="flex border border-gray-300 w-80 h-10 mt-3">
-                        <input type="text" 
-                        placeholder="Promo code" 
-                        className="focus:outline-none px-2 w-64" />
+                        <input type="text"
+                            placeholder="Promo code"
+                            className="focus:outline-none px-2 w-64" />
                         <button className="bg-red-600 w-28 text-white">Submit</button>
                     </div>
                 </div>

@@ -26,8 +26,9 @@ const Hero = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
+        arrows: false
     };
 
     console.log(HeroBanner)
@@ -81,7 +82,7 @@ const Hero = () => {
                 </div>
                 <div className='flex gap-12 my-7'>
                     <div onClick={() => window.scrollTo(0, 0)}>
-                        <Link to='/women' onClick={() => setMenu('women')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                        <Link to='/women' onClick={() => setMenu('women')}><div className='ct-hero-img'>
                             <img src={for_her} alt="" className='h-[200px] w-[200px]' />
                             <h1 className='pt-1'>For Her</h1>
                         </div>
@@ -89,7 +90,7 @@ const Hero = () => {
                     </div>
 
                     <div onClick={() => window.scrollTo(0, 0)}>
-                        <Link to='/men' onClick={() => setMenu('men')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                        <Link to='/men' onClick={() => setMenu('men')}><div className='ct-hero-img'>
                             <img src={for_him} alt="" className='h-[200px] w-[200px]' />
                             <p className='pt-1'>For Him</p>
                         </div>
@@ -97,7 +98,7 @@ const Hero = () => {
                     </div>
 
                     <div onClick={() => window.scrollTo(0, 0)}>
-                        <Link to='/new-trending' onClick={() => setMenu('new')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                        <Link to='/new-trending' onClick={() => setMenu('new')}><div className='ct-hero-img'>
                             <img src={new_in} alt="" className='h-[200px] w-[200px]' />
                             <h1 className='pt-1'>New In</h1>
                         </div>
@@ -105,7 +106,7 @@ const Hero = () => {
                     </div>
 
                     <div onClick={() => window.scrollTo(0, 0)}>
-                        <Link to='/discovery' onClick={() => setMenu('discovery')}><div className='flex flex-col items-center hover:scale-105 transition-all duration-700'>
+                        <Link to='/discovery' onClick={() => setMenu('discovery')}><div className='ct-hero-img'>
                             <img src={sale} alt="" className='h-[200px] w-[200px]' />
                             <h1 className='pt-1'>Sale</h1>
                         </div>

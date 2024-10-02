@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ct-dropdown-menu {
+    @apply px-5 py-3 hover:bg-gray-300 dark:hover:bg-gray-800;
+}
+
+.ct-hero-img{
+    @apply flex flex-col items-center hover:scale-105 transition-all duration-700;
+}
