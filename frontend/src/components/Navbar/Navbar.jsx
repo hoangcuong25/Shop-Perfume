@@ -19,7 +19,7 @@ const Navbar = () => {
                         <Link to='/brands' className="flex items-center gap-1 hover:text-[#0e3f5c]">BRANDS<IoIosArrowDown /></Link>
                         {menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}
                     </li>
-                    <div className="hidden peer-hover:flex hover:flex justify-evenly w-[210px] h-[290px] flex-col 
+                    <div className="hidden md:peer-hover:flex hover:flex justify-evenly w-[210px] h-[290px] flex-col 
                     bg-white drop-shadow-lg absolute top-6 z-50 border border-gray-400">
                         <Link to='/CarolinaHerrera'>
                             <div className="ct-dropdown-menu" >Carolina Herrera</div>
