@@ -16,10 +16,10 @@ const Header = () => {
 
     return (
         <>
-            <div className='flex justify-between py-3 px-10'>
+            <div className='flex justify-between py-3 md:px-10 px-3'>
                 {/* left side */}
-                <div className='flex gap-6 group items-center'>
-                    <Link to='/' onClick={() => setMenu('home')}><img src={logo} alt="" className='w-[217px] h-[37px]' />{ }</Link>
+                <div className='flex md:gap-6 gap-1 group items-center'>
+                    <Link to='/' onClick={() => setMenu('home')}><img src={logo} alt="" className='md:w-[217px] md:h-[37px] w-[117px] h-[23px]' />{ }</Link>
                     <div className='group relative'>
                         <input type="text"
                             placeholder="Search"
@@ -29,13 +29,13 @@ const Header = () => {
                             hidden  transition-all duration-300 rounded-md border
                             border-gray-300 px-6 focus:outline-none focus:border-primary'
                         />
-                        <IoMdSearch className='absolute md:top-[10px] md:left-1 md:text-[17px] top-[-15px] text-[28px]  group-hover:text-primary ' />
+                        <IoMdSearch className='absolute md:top-[10px] md:left-1 md:text-[17px] top-[-10px] text-[20px]  group-hover:text-primary ' />
                     </div>
 
                 </div>
 
                 {/* right side */}
-                <div className="flex items-center gap-10 px-10">
+                <div className="flex items-center gap-10 md:px-10 px-3">
                     <div className='relative group lg:flex hidden'>
                         <IoLocationOutline className='text-[30px] cursor-pointer hover:text-primary' />
                         <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
@@ -65,39 +65,40 @@ const Header = () => {
                     </div>
 
                     <Link to='/cart' onClick={() => window.scrollTo(0, 0)}>
-                        <div className='relative group'>
-                            <PiShoppingCartSimple className='text-[37px] cursor-pointer hover:text-primary' />
-                            <p className='bg-red-600 py-0 px-[5px] rounded-full absolute right-[-3px] top-0 text-[13px]'>{getTotalCartItems()}</p>
-                            <span className='hidden absolute bg-blue-300 w-20 group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
+                        <div className='relative group '>
+                            <PiShoppingCartSimple className='md:text-[37px] text-[25px] cursor-pointer hover:text-primary' />
+                            <p className='bg-red-600 py-0 px-[5px] rounded-full absolute right-[-3px] top-0 md:text-[13px] text-[10px] text-center'>{getTotalCartItems()}</p>
+                            <span className='hidden absolute bg-blue-300 w-20 md:group-hover:flex justify-center items-center rounded-full left-[-20px] bottom-[-37px]'>
                                 Cart
                             </span>
                         </div>
                     </Link>
 
                     <div className='relative'>
-                        <LuMenu className='text-[28px] flex lg:hidden cursor-pointer peer' />
+                        <LuMenu className='md:text-[35px] text-[23px] flex lg:hidden cursor-pointer peer' />
 
-                        <div className="hidden peer-hover:flex hover:flex justify-evenly w-[210px] h-[223px] flex-col 
-                            bg-white drop-shadow-lg absolute top-7 right-[-30px] z-10 border border-gray-400 dark:bg-[#010910]">
+                        <div className="hidden peer-hover:flex hover:flex justify-evenly md:w-[210px] md:h-[223px] flex-col 
+                            bg-white drop-shadow-lg absolute md:top-8 md:right-[-30px] z-10 border border-gray-400 dark:bg-[#010910]
+                            top-5 right-[-10px] w-[137px] h-[193px]">
 
                             <div className='flex items-center ct-dropdown-menu gap-3'>
-                                <IoLocationOutline className='text-[30px] cursor-pointer hover:text-primary' />
-                                <div className="" >Location</div>
+                                <IoLocationOutline className='md:text-[30px] cursor-pointer hover:text-primary text-[23px]' />
+                                <div className="text-[15px]" >Location</div>
                             </div>
 
                             <div className='flex items-center ct-dropdown-menu gap-3'>
-                                <CiDeliveryTruck className='text-[37px] cursor-pointer hover:text-primary' />
-                                <div className="" > Delivery</div>
+                                <CiDeliveryTruck className='md:text-[37px] cursor-pointer hover:text-primary text-[25px]' />
+                                <div className="text-[15px]" > Delivery</div>
                             </div>
 
                             <div className='flex items-center ct-dropdown-menu gap-3'>
-                                <MdOutlineFavoriteBorder className='text-[30px] cursor-pointer hover:text-primary' />
-                                <div className="" >Whistlist</div>
+                                <MdOutlineFavoriteBorder className='md:text-[30px] cursor-pointer hover:text-primary text-[22px]' />
+                                <div className="text-[15px]" >Whistlist</div>
                             </div>
 
                             <Link to='/log-in' className='flex items-center ct-dropdown-menu gap-3'>
-                                <VscAccount className='text-[28px] cursor-pointer hover:text-primary' />
-                                <div className="" >Login</div>
+                                <VscAccount className='md:text-[28px] cursor-pointer hover:text-primary text-[20px]' />
+                                <div className="text-[15px]" >Login</div>
                             </Link>
                         </div>
                     </div>
