@@ -20,7 +20,7 @@ const Navbar = () => {
                         {menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}
                     </li>
                     <div className="hidden peer-hover:flex hover:flex justify-evenly w-[210px] h-[290px] flex-col 
-                    bg-white drop-shadow-lg absolute top-6 z-10 border border-gray-400 dark:bg-[#010910]">
+                    bg-white drop-shadow-lg absolute top-6 z-10 border border-gray-400">
                         <Link to='/CarolinaHerrera'>
                             <div className="ct-dropdown-menu" >Carolina Herrera</div>
                         </Link >

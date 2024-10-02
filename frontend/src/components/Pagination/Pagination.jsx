@@ -1,5 +1,3 @@
-import { button } from "@material-tailwind/react";
-
 const Pagination = (props) => {
     const { totalPosts, postPerPage, setCurrentPage, currentPage } = props;
     let pages = [];
