@@ -10,7 +10,7 @@ const Category = (props) => {
                 <h1 className="text-white flex text-[30px] pb-1">{props.category}'s</h1>
             </div>
 
-            <img src={props.banner} alt="" className='px-10' />
+            <img src={props.banner} alt="" className='' />
 
             <div className='grid grid-cols-4 my-7 mx-3'>
                 {all_item.map((item, index) => {

@@ -11,12 +11,14 @@ const Pagination = (props) => {
     const prevPage = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1)
+            window.scrollTo(0, 500)
         }
     }
 
     const nextPage = () => {
         if (currentPage < pages.length) {
             setCurrentPage(currentPage + 1)
+            window.scrollTo(0, 500)
         }
     }
 

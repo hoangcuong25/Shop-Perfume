@@ -10,13 +10,13 @@ const Navbar = () => {
     return (
         <div>
             <ul className="flex gap-7 px-10">
-                <li onClick={() => setMenu('home')}><Link to='/'>HOME</Link>{menu === 'home' ? <hr className="w-[100%]  border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('new')}><Link to='/new-trending'>NEW & TRENDING</Link>{menu === 'new' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('men')}><Link to='/men'>MEN'S</Link>{menu === 'men' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('women')}><Link to='/women'>WOMEN'S</Link>{menu === 'women' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('home')} className="hover:text-[#0e3f5c]"><Link to='/'>HOME</Link>{menu === 'home' ? <hr className="w-[100%]  border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('new')} className="hover:text-[#0e3f5c]"><Link to='/new-trending'>NEW & TRENDING</Link>{menu === 'new' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('men')} className="hover:text-[#0e3f5c]"><Link to='/men'>MEN'S</Link>{menu === 'men' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('women')} className="hover:text-[#0e3f5c]"><Link to='/women'>WOMEN'S</Link>{menu === 'women' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <div className="relative">
                     <li onClick={() => setMenu('brand')} className="peer">
-                        <Link to='/brands' className="flex items-center gap-1">BRANDS<IoIosArrowDown /></Link>
+                        <Link to='/brands' className="flex items-center gap-1 hover:text-[#0e3f5c]">BRANDS<IoIosArrowDown /></Link>
                         {menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}
                     </li>
                     <div className="hidden peer-hover:flex hover:flex justify-evenly w-[210px] h-[290px] flex-col 
@@ -43,10 +43,10 @@ const Navbar = () => {
 
                 </div>
 
-                <li onClick={() => setMenu('gifting')}><Link to='gifting'>GIFTING</Link>{menu === 'gifting' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('bathandbody')}><Link to='bathandbody'>BATH AND BODY</Link>{menu === 'bathandbody' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('discovery')}><Link to='/discovery'>DISCOVERY</Link>{menu === 'discovery' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
-                <li onClick={() => setMenu('blog')}><Link>BLOG</Link>{menu === 'blog' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('gifting')} className="hover:text-[#0e3f5c]"><Link to='gifting'>GIFTING</Link>{menu === 'gifting' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('bathandbody')} className="hover:text-[#0e3f5c]"><Link to='bathandbody'>BATH AND BODY</Link>{menu === 'bathandbody' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('discovery')} className="hover:text-[#0e3f5c]"><Link to='/discovery'>DISCOVERY</Link>{menu === 'discovery' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
+                <li onClick={() => setMenu('blog')} className="hover:text-[#0e3f5c]"><Link>BLOG</Link>{menu === 'blog' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
             </ul>
             <hr className='my-3' />
         </div >

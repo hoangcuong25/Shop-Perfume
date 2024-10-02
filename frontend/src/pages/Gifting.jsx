@@ -11,7 +11,7 @@ const Gifting = () => {
             </div>
 
             <div className='flex justify-center'>
-                <img src={banner3} alt="" className="mt-4 px-10" />
+                <img src={banner3} alt="" className="mt-4" />
             </div>
 
             <div className='grid grid-cols-4 mt-7 mx-3'>
