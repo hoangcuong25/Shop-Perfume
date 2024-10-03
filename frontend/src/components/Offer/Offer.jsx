@@ -4,13 +4,13 @@ const Offer = () => {
     return (
         <div className='flex justify-evenly items-center mt-7'>
             <div>
-                <h1 className="text-[40px]">Exclusive </h1>
-                <h1 className="text-[40px]">Offers For You</h1>
-                <button className='mt-3 text-[20px] bg-red-600 h-[45px] w-[150px] rounded-full'>Check Now</button>
+                <h1 className="ct-text-header">Exclusive </h1>
+                <h1 className="ct-text-header">Offers For You</h1>
+                <button className='h-[25px] w-[100px] text-[13px] md:h-[30px] md:w-[120px] md:text-[15px] lg:h-[40px] lg:w-[135px] lg:text-[18px] xl:h-[45px] xl:w-[150px] xl:text-[20px] mt-3 bg-red-600 rounded-full'>Check Now</button>
             </div>
 
             <div>
-                <img src={banner_offer} alt="" className='h-[450px] w-[650px]' />
+                <img src={banner_offer} alt="" className='w-[380px] md:w-[500px] lg:w-[700px] xl:w-[850px] h-auto' />
             </div>
         </div>
     )

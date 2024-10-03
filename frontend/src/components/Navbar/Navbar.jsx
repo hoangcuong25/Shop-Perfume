@@ -8,7 +8,7 @@ const Navbar = () => {
     const { menu, setMenu } = useContext(ShopContext)
 
     return (
-        <div className="max-[768px]:overflow-y-scroll lg:text-[16px] text-[13px]">
+        <div className="max-[1023px]:overflow-y-scroll lg:text-[16px] text-[13px]">
             <ul className="flex gap-7 md:px-10 px-3">
                 <li onClick={() => setMenu('home')} className="hover:text-[#0e3f5c]"><Link to='/'>HOME</Link>{menu === 'home' ? <hr className="w-[100%]  border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('new')} className="hover:text-[#0e3f5c] min-w-[109px]"><Link to='/new-trending'>NEW & TRENDING</Link>{menu === 'new' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
@@ -19,7 +19,7 @@ const Navbar = () => {
                         <Link to='/brands' className="flex items-center gap-1 hover:text-[#0e3f5c]">BRANDS<IoIosArrowDown /></Link>
                         {menu === 'brand' ? <hr className="w-[100%] border-red-700" /> : <></>}
                     </li>
-                    <div className="hidden md:peer-hover:flex hover:flex justify-evenly w-[210px] h-[290px] flex-col 
+                    <div className="hidden lg:peer-hover:flex hover:flex justify-evenly w-[210px] h-[290px] flex-col 
                     bg-white drop-shadow-lg absolute top-6 z-50 border border-gray-400">
                         <Link to='/CarolinaHerrera'>
                             <div className="ct-dropdown-menu" >Carolina Herrera</div>

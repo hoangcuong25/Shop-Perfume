@@ -47,43 +47,43 @@ const Hero = () => {
             </div>
 
             <div className='flex flex-col items-center'>
-                <h1 className='text-[40px] my-7 font-semibold'>OUR FRAGRANCE BRANDS</h1>
-                <div className='flex gap-12 cursor-pointer'>
+                <h1 className='ct-text-header my-7'>OUR FRAGRANCE BRANDS</h1>
+                <div className='gap-4 md:gap-6 lg:gap-8 xl:gap-12  flex cursor-pointer items-center'>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/Dolce&Gabbana' onClick={() => setMenu('brand')}>
-                            <img src={dolce_gabbana_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
+                            <img src={dolce_gabbana_logo} alt="" className='w-[85px] md:w-[120px] lg:w-[150px] xl:w-[170px] ct-hero-brand' />
                         </Link>
                     </div>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/CarolinaHerrera' onClick={() => setMenu('brand')}>
-                            <img src={carolina_herrera_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
+                            <img src={carolina_herrera_logo} alt="" className='w-[85px] md:w-[120px] lg:w-[150px] xl:w-[170px] ct-hero-brand' />
                         </Link>
                     </div>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/Gucci' onClick={() => setMenu('brand')}>
-                            <img src={gucci_logo} alt="" className='w-[130px] h-[20px] hover:scale-110 transition-all duration-700' />
+                            <img src={gucci_logo} alt="" className='w-[85px] md:w-[120px] lg:w-[150px] xl:w-[170px] ct-hero-brand' />
                         </Link>
                     </div>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/MarcJacobs' onClick={() => setMenu('brand')}>
-                            <img src={marc_jacobs_logo} alt="" className='w-[110px] h-[20px] hover:scale-110 transition-all duration-700' />
+                            <img src={marc_jacobs_logo} alt="" className='w-[85px] md:w-[120px] lg:w-[150px] xl:w-[170px] ct-hero-brand' />
                         </Link>
                     </div>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/TOMFORD' onClick={() => setMenu('brand')}>
-                            <img src={tom_ford_logo} alt="" className='w-[130px] h-[25px] hover:scale-110 transition-all duration-700' />
+                            <img src={tom_ford_logo} alt="" className='w-[85px] md:w-[120px] lg:w-[150px] xl:w-[170px] ct-hero-brand' />
                         </Link>
                     </div>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/Versace' onClick={() => setMenu('brand')}>
-                            <img src={versace_logo} alt="" className='w-[100px] h-[30px] hover:scale-110 transition-all duration-700' />
+                            <img src={versace_logo} alt="" className='w-[68px] md:w-[80px] lg:w-[95px] xl:w-[105px] ct-hero-brand' />
                         </Link>
                     </div>
                 </div>
-                <div className='flex gap-12 my-7'>
+                <div className='gap-5 md:gap-8 lg:gap-10 xl:gap-12 flex my-7 items-center'>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/women' onClick={() => setMenu('women')}><div className='ct-hero-img'>
-                            <img src={for_her} alt="" className='h-[200px] w-[200px]' />
+                            <img src={for_her} alt="" className='ct-hero-end' />
                             <h1 className='pt-1'>For Her</h1>
                         </div>
                         </Link>
@@ -91,7 +91,7 @@ const Hero = () => {
 
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/men' onClick={() => setMenu('men')}><div className='ct-hero-img'>
-                            <img src={for_him} alt="" className='h-[200px] w-[200px]' />
+                            <img src={for_him} alt="" className='ct-hero-end' />
                             <p className='pt-1'>For Him</p>
                         </div>
                         </Link>
@@ -99,7 +99,7 @@ const Hero = () => {
 
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/new-trending' onClick={() => setMenu('new')}><div className='ct-hero-img'>
-                            <img src={new_in} alt="" className='h-[200px] w-[200px]' />
+                            <img src={new_in} alt="" className='ct-hero-end' />
                             <h1 className='pt-1'>New In</h1>
                         </div>
                         </Link>
@@ -107,7 +107,7 @@ const Hero = () => {
 
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/discovery' onClick={() => setMenu('discovery')}><div className='ct-hero-img'>
-                            <img src={sale} alt="" className='h-[200px] w-[200px]' />
+                            <img src={sale} alt="" className='ct-hero-end' />
                             <h1 className='pt-1'>Sale</h1>
                         </div>
                         </Link>

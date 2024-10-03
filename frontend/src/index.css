@@ -9,3 +9,15 @@
 .ct-hero-img{
     @apply flex flex-col items-center hover:scale-105 transition-all duration-700;
 }
+
+.ct-hero-brand {
+    @apply h-auto hover:scale-110 transition-all duration-700;
+}
+
+.ct-hero-end {
+    @apply w-[117px] md:w-[150px] lg:w-[170px] xl:w-[200px] h-auto;
+}
+
+.ct-text-header {
+    @apply text-[30px] md:text-[35px] lg:text-[38px] xl:text-[40px] font-semibold;
+}
