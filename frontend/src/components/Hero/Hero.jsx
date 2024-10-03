@@ -46,7 +46,7 @@ const Hero = () => {
                 </Slider>
             </div>
 
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center mx-3'>
                 <h1 className='ct-text-header my-7'>OUR FRAGRANCE BRANDS</h1>
                 <div className='gap-4 md:gap-6 lg:gap-8 xl:gap-12  flex cursor-pointer items-center'>
                     <div onClick={() => window.scrollTo(0, 0)}>

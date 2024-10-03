@@ -15,7 +15,7 @@ const Brands = () => {
             </div>
 
             <h1 className="text-[40px] font-bold text-center">Carolina Herrera</h1>
-            <div className='grid grid-cols-4 my-7 mx-3 '>
+            <div className='ct-grid-item '>
                 {all_item.map((item, index) => {
                     if (item.brands === `Carolina Herrera`) {
                         return <Item key={index} id={item.id} image={item.image} brands={item.brands}

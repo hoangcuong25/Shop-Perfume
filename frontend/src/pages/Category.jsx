@@ -12,7 +12,7 @@ const Category = (props) => {
 
             <img src={props.banner} alt="" className='' />
 
-            <div className='grid grid-cols-4 my-7 mx-3'>
+            <div className='ct-grid-item'>
                 {all_item.map((item, index) => {
                     if (props.category === item.category) {
                         return <Item key={index} id={item.id} image={item.image} brands={item.brands}

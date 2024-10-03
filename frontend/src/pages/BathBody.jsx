@@ -13,7 +13,7 @@ const FaceBody = () => {
                 <img src={banner4} alt="" className="mt-4 " />
             </div>
 
-            <div className='grid grid-cols-4 mt-7 mx-3'>
+            <div className='ct-grid-item'>
                 {FaceBodyItem.map((item, index) => {
                     return <Item key={index} id={item.id} image={item.image} brands={item.brands} name={item.name} new_price={item.new_price} old_price={item.old_price} />
                 })}

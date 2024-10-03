@@ -14,7 +14,7 @@ const Footer = () => {
             <div onClick={() => window.scrollTo(0, 0)}>
                 <Link to='/' onClick={() => setMenu('home')}><img src={logo} alt="" className='w-[217px] h-[37px]' /></Link>
             </div>
-            <ul className="flex gap-28">
+            <ul className="gap-5 text-[12px] md:gap-12 md:text-[14px] lg:gap-20 lg:text-[16px] xl:gap-28 xl:text-[18px] flex ">
                 <li>Company</li>
                 <li>Product</li>
                 <li>Offices</li>
@@ -22,14 +22,14 @@ const Footer = () => {
                 <li>Contact</li>
             </ul>
             <div>
-                <div className="flex gap-28">
+                <div className="flex xl:gap-28 md:gap-16 gap-8">
                     <img src={ins_logo} alt="" className="w-[25px] h-[25px]" />
                     <img src={pin_logo} alt="" className="w-[25px] h-[25px]" />
                     <img src={whatsapp} alt="" className="w-[25px] h-[25px]" />
                 </div>
             </div>
             <hr className="w-[80%] place-self-center" />
-            <div className="place-self-center">
+            <div className="place-self-center text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
                 <p>COPYRIGHT @ 2024 -ALL RIGHT RESERVED.</p>
             </div>
         </div>

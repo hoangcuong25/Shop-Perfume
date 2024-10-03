@@ -12,7 +12,7 @@ const NewTrending = () => {
             <div className='mt-5 flex justify-center relative '>
                 <img src={banner} alt="" />
             </div>
-            <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-7 mx-3 '>
+            <div className='ct-grid-item '>
                 {new_trending.map((item, index) => {
                     return <Item key={index} id={item.id} image={item.image} brands={item.brands} name={item.name} new_price={item.new_price} old_price={item.old_price} />
                 })}
