@@ -1,6 +1,7 @@
 import banner_offer from '../../assets/banner_offer.png';
 
 const Offer = () => {
+
     return (
         <div className='flex justify-evenly items-center mt-7 mx-3'>
             <div>

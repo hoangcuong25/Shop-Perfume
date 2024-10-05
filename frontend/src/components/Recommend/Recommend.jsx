@@ -29,7 +29,9 @@ const Recommend = () => {
     };
 
     return (
-        <div className='mx-2 md:mx-5 lg:mx-8 xl:mx-10'>
+        <div
+            data-aos="fade-up"
+            className='mx-2 md:mx-5 lg:mx-8 xl:mx-10'>
             <h1 className='ct-text-header flex justify-center mt-12'>Recommend For You</h1>
             <div className="">
                 <Slider {...settings}>

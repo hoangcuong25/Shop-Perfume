@@ -3,11 +3,15 @@ import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/Context";
+import { toast } from 'react-toastify';
 
 const ProductDisplay = (props) => {
 
     const { product } = props
-    const {addToCart} = useContext(ShopContext)
+    const { addToCart } = useContext(ShopContext)
+
+    const notify = () => toast.success("Added Successfuly");
+
     return (
         <div className="flex">
             <div className="flex gap-5 ml-10">
@@ -38,7 +42,9 @@ const ProductDisplay = (props) => {
                 <div className="flex mt-8 mb-1 gap-1">
                     <Link to='/log-in'><p className="text-blue-700 underline">Log In</p></Link> <p>For Free Delivery</p>
                 </div>
-                <button onClick={() => addToCart(product.id)} className=" bg-red-500 w-52 h-12 rounded-md text-white text-[20px]">Add To Cart</button>
+                <div onClick={notify}>
+                    <button onClick={() => addToCart(product.id)} className=" bg-red-500 w-52 h-12 rounded-md text-white text-[20px]">Add To Cart</button>
+                </div>
             </div>
         </div>
     )

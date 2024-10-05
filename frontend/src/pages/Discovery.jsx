@@ -23,6 +23,10 @@ const Discovery = () => {
                 <img src={banner2} alt="" className="mt-4" />
             </div>
 
+            <div className='mt-5 text-center'>
+                <span>{all_item.length} Results - All Product</span>
+            </div>
+
             <div className='ct-grid-item'>
                 {currentPosts.map((item, index) => {
                     return <Item key={index} id={item.id} image={item.image} brands={item.brands} name={item.name} new_price={item.new_price} old_price={item.old_price} />

@@ -2,10 +2,14 @@
 import { useContext } from "react"
 import { ShopContext } from "../../Context/Context"
 import { TiDeleteOutline } from "react-icons/ti";
+import { toast } from 'react-toastify';
+
 
 const CartItem = () => {
 
     const { cartItems, all_item, getTotalCartAmount, removeFromCart } = useContext(ShopContext)
+
+    const notify = () => toast.success("Deleted Successfuly");
 
     return (
         <div className="mt-8 mx-10">
@@ -31,7 +35,7 @@ const CartItem = () => {
                                 <p>{item.new_price}</p>
                                 <p>{cartItems[item.id]}</p>
                                 <p>{item.new_price * cartItems[item.id]}</p>
-                                <div className="flex justify-center">
+                                <div className="flex justify-center" onClick={notify}>
                                     <TiDeleteOutline onClick={() => { removeFromCart(item.id) }} className="flex items-center justify-center text-[30px] cursor-pointer " />
                                 </div>
 

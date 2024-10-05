@@ -18,15 +18,25 @@ import Brands from "./pages/Brands"
 import Discovery from "./pages/Discovery"
 import Gifting from "./pages/Gifting"
 import FaceBody from "./pages/BathBody"
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function App() {
+
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 500,
+  });
+
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <Navbar />
+        <div className="sticky top-0 z-50 bg-white">
+          <Header />
+          <Navbar />
+        </div>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/new-trending' element={<NewTrending />} />

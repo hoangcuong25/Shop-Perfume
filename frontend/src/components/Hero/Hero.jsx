@@ -46,7 +46,9 @@ const Hero = () => {
                 </Slider>
             </div>
 
-            <div className='flex flex-col items-center mx-3'>
+            <div
+                data-aos="fade-up"
+                className='flex flex-col items-center mx-3'>
                 <h1 className='ct-text-header my-7'>OUR FRAGRANCE BRANDS</h1>
                 <div className='gap-4 md:gap-6 lg:gap-8 xl:gap-12  flex cursor-pointer items-center'>
                     <div onClick={() => window.scrollTo(0, 0)}>
@@ -80,6 +82,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
+
                 <div className='gap-5 md:gap-8 lg:gap-10 xl:gap-12 flex my-7 items-center'>
                     <div onClick={() => window.scrollTo(0, 0)}>
                         <Link to='/women' onClick={() => setMenu('women')}><div className='ct-hero-img'>
@@ -113,7 +116,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-            </div >
+            </div>
         </>
     )
 }

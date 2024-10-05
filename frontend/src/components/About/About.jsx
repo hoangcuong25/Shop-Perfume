@@ -1,6 +1,9 @@
 const About = () => {
     return (
-        <div className="text-center mt-12 md:px-[17px] lg:px-[50px] xl:px-[83px] font-serif mx-3">
+        <div
+            data-aos="fade-up"
+            className="text-center mt-12 md:px-[17px] lg:px-[50px] xl:px-[83px] font-serif mx-3"
+        >
             <h1 className="ct-text-header ">About The Perfume Shop</h1>
             <p className="text-[10px] md:text-[11px] lg:text-[12px] xl:text-[13px] py-3 ">For 30 years we have been selling the widest range of women's perfumes and men's aftershaves at affordable prices. We stock the fragrances of nearly 130 brands including Hugo Boss, Paco Rabanne, Gucci, Ariana Grande, Mugler and Marc Jacobs both online and across our network of over 215 nationwide stores. We also stock the luxury perfume brands Dior, Tom Ford, Viktor & Rolf, Hermès and Maison Margiela.</p>
             <p className="text-[10px] md:text-[11px] lg:text-[12px] xl:text-[13px]">Not only do we have the experience of selling perfumes, we also have the expertise to match. Our staff are trained and developed so that they are the most knowledgeable sales advisors within the perfume industry, we have the largest number of Fragrance Foundation fragrance graduates nationwide and a fragrance finder to guide your online shopping.</p>

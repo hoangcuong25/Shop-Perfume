@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div className="max-[1023px]:overflow-y-scroll lg:text-[16px] text-[13px]">
-            <ul className="flex gap-7 md:px-10 px-3">
+            <ul className="flex gap-7 md:px-10 px-3" onClick={() => window.scrollTo(0, 0)}>
                 <li onClick={() => setMenu('home')} className="hover:text-[#0e3f5c]"><Link to='/'>HOME</Link>{menu === 'home' ? <hr className="w-[100%]  border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('new')} className="hover:text-[#0e3f5c] min-w-[109px]"><Link to='/new-trending'>NEW & TRENDING</Link>{menu === 'new' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>
                 <li onClick={() => setMenu('men')} className="hover:text-[#0e3f5c]"><Link to='/men'>MEN'S</Link>{menu === 'men' ? <hr className="w-[100%] border-red-700" /> : <></>}</li>

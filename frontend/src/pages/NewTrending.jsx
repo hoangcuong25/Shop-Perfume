@@ -4,6 +4,7 @@ import Item from '../components/Item/Item'
 import Recommend from '../components/Recommend/Recommend'
 
 const NewTrending = () => {
+    console.log(new_trending.length)
     return (
         <div>
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-[100%] h-[53px] flex justify-center items-center">
@@ -11,6 +12,9 @@ const NewTrending = () => {
             </div>
             <div className='mt-5 flex justify-center relative '>
                 <img src={banner} alt="" />
+            </div>
+            <div className='mt-5 text-center'>
+                <span>{new_trending.length} Results - New Fragrances</span>
             </div>
             <div className='ct-grid-item '>
                 {new_trending.map((item, index) => {
