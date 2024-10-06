@@ -20,6 +20,7 @@ import Gifting from "./pages/Gifting"
 import FaceBody from "./pages/BathBody"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { BsChatLeftText } from "react-icons/bs";
 
 function App() {
 
@@ -33,6 +34,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <div className="fixed z-50 right-3 bottom-5 cursor-pointer bg-pink-700 size-10 flex items-center justify-center rounded-full">
+          <BsChatLeftText className="size-6" />
+        </div>
+
         <div className="sticky top-0 z-50 bg-white">
           <Header />
           <Navbar />
