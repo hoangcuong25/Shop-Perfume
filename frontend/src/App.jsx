@@ -21,6 +21,7 @@ import FaceBody from "./pages/BathBody"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { BsChatLeftText } from "react-icons/bs";
+import BlogSite from "./pages/BlogSite"
 
 function App() {
 
@@ -54,6 +55,8 @@ function App() {
           <Route path="/discovery" element={<Discovery />} />
           <Route path='/gifting' element={<Gifting />} />
           <Route path='/bathandbody' element={<FaceBody />} />
+          <Route path='/blog' element={<BlogSite />} />
+
 
           <Route path='/Dolce&Gabbana' element={<ParticularBrand brands="Dolce & Gabbana" />} />
           <Route path='/CarolinaHerrera' element={<ParticularBrand brands="Carolina Herrera" />} />

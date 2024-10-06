@@ -34,7 +34,7 @@ const Category = (props) => {
                     return null
                 })}
             </div>
-            <img src={props.banner1} alt="" className='px-10' />
+            <img src={props.banner1} alt="" className='' />
             <Recommend />
         </div>
     )
